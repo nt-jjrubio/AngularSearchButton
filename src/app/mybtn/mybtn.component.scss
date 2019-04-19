@@ -1,0 +1,38 @@
+.my-button {
+  background-color: #F9627D;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+
+  border-radius: 50px;
+  transition: all 1s;
+  overflow: hidden;
+  .search-icon {
+    margin-left: 12px;
+    margin-right: 15px;
+  }
+
+  input {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #fff;
+    color: #fff;
+    background-color: #F9627D;
+    padding: 6px 10px;
+    &::placeholder {
+      color: #fff;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: none;
+
+    }
+  }
+  &.expanded {
+    width: 240px;
+
+  }
+
+}

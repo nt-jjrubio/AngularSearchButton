@@ -1,0 +1,5 @@
+<div class="my-button" (mouseenter)="expandedBtn = true"  [ngClass]="{'expanded': expandedBtn}">
+  <span class="search-icon"> <fa-icon [icon]="['fas', 'search']"></fa-icon> </span>
+
+  <input type="text" placeholder="Escribe aqui" *ngIf="expandedBtn" >
+</div>
